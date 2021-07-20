@@ -18,7 +18,7 @@ public class Conectar {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/proyecto", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/inventario-system", "root", "1234");
             st = con.createStatement();
         } catch (SQLException ex) {
             Logger.getLogger(Conectar.class.getName()).log(Level.SEVERE, null, ex);
